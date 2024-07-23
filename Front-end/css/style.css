@@ -1,0 +1,86 @@
+body{
+    background-color: grey;
+    block-size: auto;
+}
+
+#forca{
+    margin-top: auto;
+    width: 30px;
+    height: 30px;
+}
+#destreza{
+    margin-left: -1px;
+    width: 30px;
+    height: 30px;
+}
+#agilidade{
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+}
+#stamina{
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+}
+#inteligencia{
+    margin-left: 6px;
+    width: 30px;
+    height: 30px;
+}
+#sabedoria{
+    margin-left: 1px;
+    width: 30px;
+    height: 30px;
+}
+#carisma{
+    margin-left: -1px;
+    width: 30px;
+    height: 30px;
+}
+#constituicao{
+    margin-left: -2px;
+    width: 30px;
+    height: 30px;
+}
+#pontosDistribuir{
+    margin-top: 15px;
+}
+.caixaTexto{
+    margin-top: 15px;
+    color: #525252;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 6px 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    outline: none;
+}
+
+#stts{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    margin-right: 1650px;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+#LvlUp{
+    margin-bottom: 20px;
+}
+
+#level{
+    margin-top: 2px;
+    margin-left: 5px;
+    width: 167px;
+}
+
+#hpBox {
+    margin-left: 0px;
+    margin-top: -15px;
+}
+
+#hpMaximo {
+    margin-left: -7px;
+}
