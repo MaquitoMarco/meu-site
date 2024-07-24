@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha RPG</title>
+    <link rel="stylesheet" href="./Front-end/css/style.css"> </link>
+</head>
+
+<body>
+
+<div id="tudo">
+
+    <h1>Criando Ficha</h1>
+
+<div class="caixaTexto">
+        <label for="name">Nome:</label>
+            <input type="text"></br>
+            <div>
+                <label>Level: <input type="number" id="level" min="1" value="1" max="99" disabled=""></label>
+            </div>
+        <label for="bodyType">bodyType:</label>
+            <select id="bodyType">
+            <option value="Mago">Mago</option>
+            <option value="Tank">Tank</option>
+            <option value="Rogue">Rogue</option>
+            <option value="Warrior">Warrior</option>
+            <option value="Controller">Controller</option>
+            <option value="Paladino">Paladino</option>
+        </select>
+            <input type="button" value="Enviar" id="btnManda" onclick="manda()">
+            <input type="button" value="LvlUp" id="LvlUp" onclick="levelUP()">       
+</div>
+<div id="hpBox">
+    <label class="caixaTexto">HP: <input type="number" id="hpAtual" min="0"> 
+  / <label class="caixaTexto"><input type="number" id="hpMaximo" readonly></label>
+</div>  
+<div id="stts">
+        <div>
+        <label>FOR: <input type="number" id="forca" min="0" value="0" max="99" disabled class="status"></label>
+        </div>
+        <div>
+        <label>DEX: <input type="number" id="destreza" min="0" value="0" max="99" disabled class="status"></label>
+        </div>
+        <div>
+        <label>AGI: <input type="number" id="agilidade" min="0" value="0" max="99" disabled class="status"></label> 
+        </div>
+        <div>
+        <label>STA: <input type="number" id="stamina" min="0" value="0" max="99" disabled class="status"></label>
+        </div>
+        <div>
+        <label>INT: <input type="number" id="inteligencia" min="0" value="0" max="99" disabled class="status"></label>
+        </div>
+        <div>
+        <label>SAB: <input type="number" id="sabedoria" min="0" value="0" max="99" disabled class="status"></label>
+        </div>
+        <div>
+        <label>CAR: <input type="number" id="carisma" min="0" value="0" max="99" disabled class="status"></label>
+        </div>
+        <div>
+        <label>CON: <input type="number" id="constituicao" min="0" value="0" max="99" disabled class="status"></label>
+        </div>
+</div>
+        <div>
+        <label>Pontos Disponiveis: <input type="number" id="pontosDistribuir" min="0" value="0" readonly></label>
+        </div>
+        <div class="caixaTexto">
+        <label><textarea name="inv" id="inventarioTxt" cols="38" rows="10" placeholder="Inventario"></textarea></label>
+        </div>
+
+        <script src="./script/script.js"></script>
+
+    </body>
+
+</html>
