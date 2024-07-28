@@ -142,3 +142,91 @@ function atualizaSta(idInput1, valor) {
     let event = new Event('input');
     tiraPontos.dispatchEvent(event);
 }
+
+function tiraHp(inputId) {
+    let pegaInput = document.getElementById(inputId);
+    let hpAtual = document.getElementById('hpAtual');
+
+    let inputValue = parseInt(pegaInput.value, 10);
+    let hpValue = parseInt(hpAtual.value, 10);
+
+    if (!isNaN(inputValue) && inputValue > 0) {
+        // Calcula o novo valor de hpAtual sem ser menor que 0
+        let novoHp = hpValue - inputValue;
+        if (novoHp < 0) {
+            novoHp = 0;
+        }
+
+        hpAtual.value = novoHp;
+        pegaInput.value = ''; // Reseta o valor do input de dano para vazio
+    } else {
+        pegaInput.value = ''; // Reseta o valor do input de dano para vazio se o valor não for válido
+    }
+}
+
+function curaHp(inputId) {
+    let pegaInput = document.getElementById(inputId);
+    let hpAtual = document.getElementById('hpAtual');
+    let hpMaximo = document.getElementById('hpMaximo');
+
+    let inputValue = parseInt(pegaInput.value, 10);
+    let hpValue = parseInt(hpAtual.value, 10);
+    let hpMaxValue = parseInt(hpMaximo.value, 10);
+
+    if (!isNaN(inputValue) && inputValue > 0) {
+        // Calcula o novo valor de hpAtual sem ultrapassar hpMaximo
+        let novoHp = hpValue + inputValue;
+        if (novoHp > hpMaxValue) {
+            novoHp = hpMaxValue;
+        }
+
+        hpAtual.value = novoHp;
+        pegaInput.value = ''; // Reseta o valor do input de cura para vazio
+    } else {
+        pegaInput.value = ''; // Reseta o valor do input de cura para vazio se o valor não for válido
+    }
+}
+
+function tiraMp(inputId) {
+    let pegaInput = document.getElementById(inputId);
+    let mpAtual = document.getElementById('mp');
+
+    let inputValue = parseInt(pegaInput.value, 10);
+    let mpValue = parseInt(mpAtual.value, 10);
+
+    if (!isNaN(inputValue) && inputValue > 0) {
+        // Calcula o novo valor de hpAtual sem ser menor que 0
+        let novoMp = mpValue - inputValue;
+        if (novoMp < 0) {
+            novoMp = 0;
+        }
+
+        mpAtual.value = novoMp;
+        pegaInput.value = ''; // Reseta o valor do input de dano para vazio
+    } else {
+        pegaInput.value = ''; // Reseta o valor do input de dano para vazio se o valor não for válido
+    }
+}
+
+function regenMp(inputId) {
+    let pegaInput = document.getElementById(inputId);
+    let mpAtual = document.getElementById('mp');
+    let mpMaximo = document.getElementById('mpMax');
+
+    let inputValue = parseInt(pegaInput.value, 10);
+    let mpValue = parseInt(mpAtual.value, 10);
+    let mpMaxValue = parseInt(mpMaximo.value, 10);
+
+    if (!isNaN(inputValue) && inputValue > 0) {
+        // Calcula o novo valor de mpAtual sem ultrapassar mpMaximo
+        let novoMp = mpValue + inputValue;
+        if (novoMp > mpMaxValue) {
+            novoMp = mpMaxValue;
+        }
+
+        mpAtual.value = novoMp;
+        pegaInput.value = ''; // Reseta o valor do input de cura para vazio
+    } else {
+        pegaInput.value = ''; // Reseta o valor do input de cura para vazio se o valor não for válido
+    }
+}

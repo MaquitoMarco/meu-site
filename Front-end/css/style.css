@@ -95,3 +95,53 @@ body{
 #bottomStatus {
     margin-left: 10px;
 }
+
+#mpBox {
+    margin-left: 0px;
+
+}
+
+#mp{
+    width: 35px;
+    text-align: center;
+}
+
+#mpMax{
+    width: 35px;
+    margin-left: -7px;
+    text-align: center;
+}
+
+#danoSofrido{
+    width: 35px;
+    margin-left: 8px;
+    text-align: center;
+}
+
+#hpRecuperar{
+    width: 35px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#mpGasto{
+    width: 35px;
+    margin-top: 20px;
+    margin-left: 2px;
+    text-align: center;
+}
+
+#mpRecuperar{
+    width: 35px;
+    margin-top: 8px;
+    margin-left: 7px;
+    text-align: center;
+}
+
+#dmg{
+    padding-inline: 7.5px;
+}
+
+#mpChange{
+    padding-inline: 7.5px;
+}

@@ -36,10 +36,10 @@
     <label class="caixaTexto">HP: <input type="number" value="0" id="hpAtual" min="0" readonly> 
   / <label class="caixaTexto"><input type="number" value="0" id="hpMaximo" min="0" readonly></label>
 </div>
-    <div >
-        <label class="caixaTexto">Mp: <input type="number" value="0" id="mp" min="0" readonly></label>  
-        / <label class="caixaTexto"><input type="number" value="0" id="mpMax" min="0" readonly></label>
-    </div>
+<div id="mpBox">
+    <label class="caixaTexto">Mp: <input type="number" value="0" id="mp" min="0" readonly> 
+  / <label class="caixaTexto"><input type="number" value="0" id="mpMax" min="0" readonly></label>
+</div>
 <div id="stts">
         <div>
         <label>FOR: 
@@ -88,7 +88,15 @@
         <div class="caixaTexto">
         <label><textarea name="inv" id="inventarioTxt" cols="38" rows="10" placeholder="Inventario"></textarea></label>
         </div>
-
+        <div>
+        <label>Dano sofrido: <input type="number" placeholder="0" id="danoSofrido"> <input type="button" value="-" id="dmg" onclick="tiraHp('danoSofrido')"></label> </br>
+        <label>Recupera vida: <input type="number" placeholder="0" id="hpRecuperar"> <input type="button" value="+" onclick="curaHp('hpRecuperar')"></label>
+        </div>
+        <div>
+        <label>Stamina gasta: <input type="number" placeholder="0" id="mpGasto"> <input type="button" value="-" id="mpChange" onclick="tiraMp('mpGasto')"></label> </br>
+        <label>Recupera Sta: <input type="number" placeholder="0" id="mpRecuperar"> <input type="button" value="+" onclick="regenMp('mpRecuperar')"></label>
+        </div>
+</div>
         <script src="./Front-end/script/script.js"></script>
 
     </body>
